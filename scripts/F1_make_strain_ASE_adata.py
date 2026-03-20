@@ -294,32 +294,32 @@ def parse_args() -> argparse.Namespace:
     # Optional path overrides (defaults match your environment)
     p.add_argument(
         "--base-path",
-        default="/share/crsp/lab/seyedam/share/igvf_allele_specific_mapping/ASE_kb/test/cellbender/",
+        default="data/cellbender",
         help="Base directory containing plate folders (igvf_0xx).",
     )
     p.add_argument(
         "--barcode-map",
-        default="/share/crsp/lab/seyedam/weberrl/F1_IGVF/ref_files/barcode_map_df.csv",
+        default="refs/barcode_map_df.csv",
         help="CSV with columns: bc, bc_sequence, bc_well.",
     )
     p.add_argument(
         "--genes-with-biotype",
-        default="/share/crsp/lab/seyedam/weberrl/genome_files/gencode_36/igvf_gtf_gene_biotypes.tsv",
+        default="refs/igvf_gtf_gene_biotypes.tsv",
         help="TSV with gene_id, gene_name, biotype (no header).",
     )
     p.add_argument(
         "--gene-id-chr-map",
-        default="/share/crsp/lab/seyedam/share/igvf_references/gencode_M36_gene_ID_chromosome_map.tsv",
+        default="refs/gencode_M36_gene_ID_chromosome_map.tsv",
         help="TSV with chromosome and gene_id(with version).",
     )
     p.add_argument(
         "--annotation-dir",
-        default="/share/crsp/lab/seyedam/weberrl/F1_IGVF/standard_processing/anndatas/annotated_processed/",
+        default="data/annotations",
         help="Directory with {tissue}_F1_processed_annotated_obs.csv files.",
     )
     p.add_argument(
         "--out-dir",
-        default="/share/crsp/lab/seyedam/weberrl/F1_IGVF/allele_specific_processing/g36/tissue_ASE_adatas_processed",
+        default="results/tissue_ASE_adatas_processed",
         help="Output directory (per-strain subfolders will be created).",
     )
     return p.parse_args()
