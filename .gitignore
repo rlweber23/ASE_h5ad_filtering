@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Runtime outputs
+*.out
+*.err
+logs/
+
+# Large analysis products
+*.h5ad
+*.h5
+*.loom
+
+# Local env state
+.venv/
+venv/
+.env
