@@ -2,7 +2,6 @@
 
 This is a reference repository for two publication scripts that generate allele-specific expression (ASE) AnnData outputs from concatenated-genome snRNA-seq alignments.
 
-The repository is intentionally simple: it focuses on explaining what each script does and how to run it directly.
 
 ## Simple layout
 
@@ -58,6 +57,4 @@ python scripts/Founder_make_strain_ASE_adata.py \
    --out-dir /path/to/output
 ```
 
-## Important note
 
-The script internals were not modified. They still contain environment-specific default paths, so pass explicit path arguments when running.
